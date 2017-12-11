@@ -15,5 +15,7 @@ const server = http.createServer(function (reguest, response) {
 
 });
 
-server.listen(3000);
+console.log('port = ', process.evn.PORT);
+server.listen(process.evn.PORT || 3000);
+
 console.log('Server started!');
